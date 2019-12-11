@@ -35,7 +35,7 @@ This gives the following output:
 Next, you should modify our template variables accordingly to our OCI Tenancy.
 You can use the boilerplate available on [terraform.tfvars.template](./simple/terraform.tfvars.template) to setup the OCI provider variables. Rename the file to `terraform.tfvars` so that Terraform CLI can automatically pick it up as the default variables configuration overriding the content of [variables.tf](./simple/variables.tf).
 
-```
+```bash
 user_ocid = "ocid1.user.oc1.."
 fingerprint = "1c.."
 private_key_path = "~/.oci/oci_api_key.pem"
@@ -52,6 +52,7 @@ Now we should run a plan to make sure everything looks good:
 ```terraform
 terraform plan
 ```
+
 ![terraform plan](./images/tf-plan1.png)
 ![terraform plan](./images/tf-plan2.png)
 
