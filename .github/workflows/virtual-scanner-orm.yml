@@ -1,4 +1,4 @@
-name: 'Generate OCI ORM Stack'
+name: 'Generate ORM Stack'
 
 on: 
   push:
